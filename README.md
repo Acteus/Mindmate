@@ -1,58 +1,101 @@
-# MindMate - Your Mental Health Companion
+# MindMate - Mental Health Companion
 
-MindMate is a comprehensive mental health companion application that combines beautiful design with thoughtful AI integration to support your mental wellbeing journey.
+MindMate is a cross-platform mental health companion application that helps users track their mood, practice mindfulness, and connect with mental health resources.
 
 ## Project Structure
 
 ```
 mindmate/
-├── mobile/           # Flutter mobile application
-├── web/             # React.js web dashboard
-├── shared/          # Shared utilities and types
-└── docs/            # Project documentation
+├── mobile/           # Flutter mobile app
+├── web/             # React web application
+├── functions/       # Firebase Cloud Functions
+└── docs/           # Project documentation
+    └── GUIDE.md    # Detailed development guide
 ```
 
-## Features
+## Documentation
 
-- Journal System
-- Mood Tracking
-- AI Chat Companion
-- Smart Notifications & Reminders
+- [Development Guide](./docs/GUIDE.md) - Comprehensive guide for setting up and developing the project
+- [Mobile App README](./mobile/README.md) - Mobile app specific setup and development
+- [Web App README](./web/README.md) - Web app specific setup and development
 
-## Tech Stack
+## Prerequisites
 
-- **Mobile App**: Flutter
-- **Web Dashboard**: React.js
-- **Backend**: Firebase (Firestore, Auth, Cloud Functions)
-- **AI Integration**: OpenAI API (placeholder)
-
-## Getting Started
-
-### Prerequisites
-
-- Flutter SDK
-- Node.js & npm
+- Node.js (v16 or higher)
+- Flutter SDK (latest stable version)
 - Firebase CLI
 - Git
 
-### Setup Instructions
+## Quick Start
 
-1. Clone the repository
-2. Install dependencies for both mobile and web applications
-3. Set up Firebase project and add configuration
-4. Follow individual README files in mobile/ and web/ directories for specific setup instructions
+1. Clone the repository:
+   ```bash
+   git clone [repository-url]
+   cd mindmate
+   ```
 
-## Development
+2. Install dependencies:
+   ```bash
+   # Web app
+   cd web
+   npm install
 
-Each part of the application has its own README with specific setup and development instructions:
+   # Mobile app
+   cd ../mobile
+   flutter pub get
 
-- [Mobile App Setup](./mobile/README.md)
-- [Web Dashboard Setup](./web/README.md)
+   # Cloud Functions
+   cd ../functions
+   npm install
+   ```
+
+3. Set up environment variables:
+   - Copy `web/.env.example` to `web/.env` and fill in your Firebase config
+   - Follow mobile app README for Flutter environment setup
+
+4. Start development:
+   ```bash
+   # Web app
+   cd web
+   npm start
+
+   # Mobile app
+   cd mobile
+   flutter run
+   ```
+
+## Features
+
+- 📝 Journal System
+- 📊 Mood Tracking
+- 💬 AI Chat Companion
+- 🔔 Smart Notifications
+- 🔐 User Authentication
+- 📱 Cross-platform Support
+
+## Tech Stack
+
+- **Mobile**: Flutter
+- **Web**: React.js with TypeScript
+- **Backend**: Firebase
+  - Authentication
+  - Firestore Database
+  - Cloud Functions
+  - Cloud Storage
+- **AI Integration**: OpenAI API
 
 ## Contributing
 
-Please read our contributing guidelines before submitting pull requests.
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Support
+
+For support, please open an issue in the GitHub repository or contact the development team. 

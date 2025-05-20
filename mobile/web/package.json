@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "@types/firebase": "^2.4.32",
+    "@types/node": "^22.15.19",
+    "firebase": "^11.7.3"
+  }
+}
